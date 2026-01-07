@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Fresh Mart Grocery Store</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f5f6fa;
+    color:#333;
+}
+
+/* HEADER */
+header{
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color:white;
+    padding:25px 0;
+    text-align:center;
+}
+header h1{
+    margin:0;
+}
+header p{
+    margin-top:5px;
+    font-style:italic;
+}
+
+/* NAVBAR */
+nav{
+    background:#ffffff;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+nav ul{
+    display:flex;
+    list-style:none;
+    justify-content:center;
+    margin:0;
+    padding:0;
+}
+nav ul li a{
+    display:block;
+    padding:14px 20px;
+    color: #2575fc;
+    font-weight:500;
+    transition:0.3s;
+}
+nav ul li a:hover{
+    background:black;
+    color:white;
+    border-radius:5px;
+}
+
+/* HERO */
+.hero{
+    background:#2575fc;
+    color:white;
+    padding:60px 0;
+    text-align:center;
+}
+.hero h2{
+    font-size:36px;
+}
+.hero p{
+    max-width:600px;
+    margin:auto;
+    font-size:16px;
+}
+.hero img{
+    margin-top:20px;
+    width:80%;
+    max-width:500px;
+    border-radius:15px;
+    box-shadow:0 6px 15px rgba(247, 245, 245, 0.2);
+}
+
+/* SECTION */
+section{
+    padding:50px 0;
+    text-align:center;
+}
+
+/* PRODUCT GALLERY */
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+    max-width:1000px;
+    margin:auto;
+}
+.product-card{
+    background:rgb(208, 176, 176);
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+.product-card img{
+    width:80%;
+    border: radius 10px;;
+}
+.product-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 12px 25px rgba(97, 92, 92, 0.2);
+}
+
+/* TABLE */
+table{
+    width:90%;
+    margin:auto;
+    border-collapse:collapse;
+}
+th,td{
+    padding:12px;
+    border:1px solid #ccc;
+    text-align:center;
+}
+th{
+    background:#7491cb;
+    color:rgb(0, 0, 0);
+}
+tr:hover{
+    background:#c4c7cc;
+}
+
+/* CONTACT */
+.contact{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+    max-width:1000px;
+    margin:auto;
+}
+form input, form textarea{
+    width:100%;
+    padding:10px;
+    margin-bottom:10px;
+    border:1px solid #822a2a;
+    border-radius:8px;
+}
+form button{
+    width:100%;
+    padding:12px;
+    background:#0e4ca9;
+    color:white;
+    border:none;
+    border-radius:25px;
+    cursor:pointer;
+}
+form button:hover{
+    background:#382150;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:25px;
+    background:#11365b;
+    color:white;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Fresh Mart Grocery Store</h1>
+<p>Your Trusted Local Shop</p>
+</header>
+
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<div class="hero">
+<h2>Welcome to Fresh Mart</h2>
+<p>Fresh groceries and daily essentials at best prices!</p>
+<!-- Shop photo -->
+<img src="GrocessoryImages-1141996490-ADedit.jpg" alt="Shop Photo">
+</div>
+
+<section id="products">
+<h2>Our Products</h2>
+<div class="products">
+    <!-- Product 1 -->
+    <div class="product-card">
+        <img src="Rice pic.avif" alt="Product 1">
+        <h3>Rice</h3>
+        <p>₹60/kg</p>
+    </div>
+    <!-- Product 2 -->
+    <div class="product-card">
+        <img src="milk pic.jpg" alt="Product 2">
+        <h3>Milk</h3>
+        <p>₹50/L</p>
+    </div>
+    <!-- Product 3 -->
+    <div class="product-card">
+        <img src="apple-fruit-shop-2216373220-bi1lxlme.jpg" alt="Product 3">
+        <h3>Apple</h3>
+        <p>₹120/kg</p>
+    </div>
+    <!-- Add more products by copying above block -->
+</div>
+</section>
+
+<section id="gallery">
+<h2>Shop & Product Gallery</h2>
+<div class="products">
+    <div class="product-card">
+        <img src="GrocessoryImages-1141996490-ADedit.jpg" alt="Shop Inside">
+    </div>
+    <div class="product-card">
+        <img src="Fruits pic.webp" alt="Fruits">
+    </div>
+    <div class="product-card">
+        <img src="Vegetables pic.avif" alt="Vegetables">
+    </div>
+</div>
+</section>
+
+<section id="price-list">
+<h2>Price List</h2>
+<table>
+<tr>
+<th>Product</th>
+<th>Category</th>
+<th>Price</th>
+</tr>
+<tr>
+<td>Rice</td><td>Grains</td><td>₹60/kg</td>
+</tr>
+<tr>
+<td>Milk</td><td>Dairy</td><td>₹50/L</td>
+</tr>
+<tr>
+<td>Apple</td><td>Fruits</td><td>₹120/kg</td>
+</tr>
+</table>
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<div class="contact">
+<form>
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Email">
+<textarea placeholder="Message"></textarea>
+<button>Send</button>
+</form>
+
+<iframe src="https://www.google.com/maps?q=22.5726,88.3639&hl=en&z=15&output=embed"
+style="width:100%; height:300px; border-radius:15px; border:0"></iframe>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Fresh Mart Grocery Store || Email:suyash.dubey@rungta.org</p>
+</footer>
+
+</body>
+</html>
